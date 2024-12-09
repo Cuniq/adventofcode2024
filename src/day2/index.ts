@@ -23,7 +23,9 @@ function isSorted(report: number[], allowRemoval: boolean): boolean {
       return false;
     } else if (!isElementSorted) {
       return (
-        isSorted([...report.slice(0, i), ...report.slice(i + 1)], false) || isSorted([...report.slice(0, i - 1), ...report.slice(i)], false)
+        isSorted([...report.slice(0, i), ...report.slice(i + 1)], false) ||
+        isSorted([...report.slice(0, i - 1), ...report.slice(i)], false) ||
+        isSorted([...report.slice(0, i - 2), ...report.slice(i - 1)], false)
       );
     }
   }
