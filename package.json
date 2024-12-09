@@ -20,6 +20,7 @@
     "day2": "tsx --watch ./src/day2/index.ts",
     "day3": "tsx --watch ./src/day3/index.ts",
     "day4": "tsx --watch ./src/day4/index.ts",
+    "day5": "tsx --watch ./src/day5/index.ts",
     "build": "tsc",
     "lint": "eslint ."
   },
