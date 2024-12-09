@@ -18,6 +18,7 @@
   "scripts": {
     "day1": "tsx --watch ./src/day1/index.ts",
     "day2": "tsx --watch ./src/day2/index.ts",
+    "day3": "tsx --watch ./src/day3/index.ts",
     "build": "tsc",
     "lint": "eslint ."
   },
