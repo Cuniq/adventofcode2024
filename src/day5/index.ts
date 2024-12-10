@@ -12,9 +12,8 @@ while (lines[i]) {
   line = lines[i++];
 
   const [beforePage, afterPage] = line.trim().split("|").map(String);
-  if (Object.prototype.hasOwnProperty.call(occurencies, beforePage)) {
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    occurencies[beforePage]!.add(afterPage);
+  if (occurencies[beforePage]) {
+    occurencies[beforePage].add(afterPage);
   } else {
     occurencies[beforePage] = new Set([afterPage]);
   }
